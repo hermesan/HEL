@@ -1,0 +1,11 @@
+<mvc:View
+  controllerName="HelloWorld.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+      <Page title="My App"/>
+      <Button
+        id="helloButton"
+        text="Say Hello"
+        press="onShow"
+        class="sapUiSmallMargin"/>
+</mvc:View>
