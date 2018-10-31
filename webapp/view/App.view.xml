@@ -1,0 +1,30 @@
+<mvc:View 
+ controllerName="Well.controller.App" 
+ xmlns:mvc="sap.ui.core.mvc" 
+ xmlns="sap.m"
+  displayBlock="true">
+  <App>
+    <pages>
+      <Page title="{i18n>homePageTitle}">
+        <content>
+          <Panel headerText="{i18n>helloPanelTitle}">
+            <content>
+
+              <Page title="{i18n>pageTitle}" />
+              <Button id="helloButton" 
+                      text="{i18n>showHelloButtonText}" 
+                      press="onShowHello" 
+                      class="sapUiSmallMargin" />
+              <Input  value="{/recipient/name}" 
+                      description="UI5 {/recipient/name}" 
+                      valueLiveUpdate="true" 
+                      width="70%"
+                      class="sapUiSmallMargin" />
+            </content>
+
+          </Panel>
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
